@@ -34,7 +34,7 @@ async def start_handler(client, message):
     await message.reply_text("سلام! لینک پست یا ریلز اینستاگرام رو بفرست تا دانلود کنم.")
 
 # دریافت لینک
-@bot.on_message(filters.text & ~filters.command)
+@bot.on_message(filters.text & ~filters.command())
 async def insta_handler(client, message):
     url = message.text.strip()
 

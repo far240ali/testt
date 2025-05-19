@@ -9,7 +9,7 @@ BOT_TOKEN = '5355055672:AAHoidc0x6nM3g2JHmb7xhWKmwGJOoKFNXY'
 
 
 # ربات را با اطلاعات خود راه‌اندازی کنید
-app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+bot = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 # تابع دانلود اینستاگرام
 def download_instagram_post(url: str, user_id: int) -> list:
